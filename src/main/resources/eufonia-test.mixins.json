@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "test.eufonia.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"BiomeLootChestMixin",
+		"NBTUsedSurvivalMode"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

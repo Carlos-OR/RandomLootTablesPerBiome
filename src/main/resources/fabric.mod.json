@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "eufonia-test",
+	"version": "${version}",
+	"name": "Eufonia test by Carlos Orellana",
+	"description": "Loot chest by Biome",
+	"authors": [
+		"Carlos Orellana!"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/eufonia-test/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"test.eufonia.EufoniaTest"
+		],
+		"client": [
+			"test.eufonia.EufoniaTestClient"
+		],
+		"fabric-datagen": [
+			"test.eufonia.EufoniaTestDataGenerator"
+		]
+	},
+	"mixins": [
+		"eufonia-test.mixins.json",
+		{
+			"config": "eufonia-test.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
